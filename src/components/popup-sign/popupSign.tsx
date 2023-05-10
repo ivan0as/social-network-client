@@ -1,4 +1,5 @@
 import { useState, useEffect, useContext } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { ICity, IUniversity, IUser } from '../../types/types';
 import { request } from '../../requests';
 import { UserContext } from '../../context';
@@ -13,6 +14,8 @@ function PopupSign() {
     setToken,
     setAuthorization,
   } = useContext(UserContext)
+
+  const navigate = useNavigate()
 
   const [registrationSwither, setRegistrationSwither] = useState(false)
 
@@ -112,6 +115,7 @@ function PopupSign() {
     request(option).then (responseData => {
       setToken(responseData.data.token)
       setUser(responseData.data.user)
+      navigate('/feed')
     }).catch(error => {
       alert(error.response.data.message)
     })
@@ -141,6 +145,7 @@ function PopupSign() {
     request(option).then (responseData => {
       setToken(responseData.data.token)
       setUser(responseData.data.user)
+      navigate('/feed')
     }).catch(error => {
       alert(error.response.data.message)
     })

@@ -1,4 +1,5 @@
 import { useContext } from 'react';
+import { Link } from 'react-router-dom';
 import { UserContext } from '../../context';
 import { request } from '../../requests';
 import { URL_IMG } from '../../config';
@@ -106,8 +107,16 @@ function Posts(props) {
                     {posts.map(post =>{
                         return (
                             <div className={css.post} key={post.id}>
+                                {post.user &&(
+                                    <Link to={`/user/${post.user.id}`} className={css.link}>
+                                        <div className={css.user_info}>
+                                                <img src={URL_IMG + post.user.img} alt="Картинка поста" className={css.img_ava}/>
+                                                <p>{post.user.name}</p>
+                                        </div>
+                                    </Link>
+                                )}
                                 {post.img && (
-                                    <img src={URL_IMG + post.img} alt="Аватарка" className={css.img}/>
+                                    <img src={URL_IMG + post.img} alt="Картинка поста" className={css.img}/>
                                 )}
                                 <p>{post.text}</p>
                                 {post && (

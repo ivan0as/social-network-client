@@ -26,6 +26,7 @@ export interface IPost {
     text?: string;
     img?: string;
     likes?: ILikes[];
+    user?: IUser;
 }
 
 export interface ILikes {
