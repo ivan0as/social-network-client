@@ -1,0 +1,71 @@
+.header {
+    background: #fff;
+}
+
+.header_content {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 400;
+    font-size: 30px;
+    padding: 0 50px;
+    background-color: #333;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    color: #fff;
+    max-width: 1460px;
+    margin: 0 auto;
+}
+
+.name_site {
+    margin: 20px 0;
+}
+
+.header_authorization {
+    position: relative;
+}
+
+.button_menu {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    background-color: #333;
+    height: 100%;
+    padding: 25px 0;
+}
+
+.button_menu:hover {
+    background-color: #717171;
+}
+
+.img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.button_menu p {
+    margin: 0 10px;
+    margin-left: 20px;
+    font-size: 28px;
+    transform: rotate(90deg);
+    color: #fff;
+}
+
+.form_search {
+    margin-top: 50px;
+}
+
+.form_search label {
+    display: flex;
+}
+
+.form_search input {
+    border-color: #C7C7C7;
+    border-radius: 5px;
+    font-size: 25px;
+    height: 42px;
+    width: 400px;
+    margin-left: 20px;
+}

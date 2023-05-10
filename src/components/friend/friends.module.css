@@ -1,0 +1,63 @@
+.link {
+    color: #000;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.friend {
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 20px;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.friend:hover {
+    background-color: #D3D3D3;
+}
+
+.friend:hover .info_friend {
+    color: #000;
+}
+
+.info_friend {
+    display: flex;
+    align-items: flex-start;
+    color: #fff;
+}
+
+.info_friend p {
+    margin: 0;
+    font-size: 25px;
+    margin-left: 10px;
+}
+
+.avatar_img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+
+.buttons button {
+    padding: 8px;
+    font-size: 18px;
+    background-color: #fff;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.buttons button:hover {
+    background-color: #D3D3D3;
+}
+
+.not_friend {
+    font-size: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 130px - 120px - 58px);
+}

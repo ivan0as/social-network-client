@@ -1,0 +1,8 @@
+body {
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+}
+
+button, input, textarea, select {
+    font-family: 'Oswald', sans-serif;
+}

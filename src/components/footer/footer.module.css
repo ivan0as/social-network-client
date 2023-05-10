@@ -1,0 +1,20 @@
+.footer {
+    background: #fff;
+}
+
+.footer_content {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+    background-color: #333;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    color: #fff;
+    font-size: 25px;
+    max-width: 1460px;
+    margin: 0 auto;
+}
+
+.footer_content p {
+    margin: 0;
+}
